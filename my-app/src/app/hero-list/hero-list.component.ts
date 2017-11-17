@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Hero } from '../hero';
 
 @Component({
   selector: 'app-hero-list',
@@ -7,16 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HeroListComponent implements OnInit {
-  heroes: { id: number, name: string, power: string }[];
+  heroes: Hero[];
   selectedHero;
 
   constructor() { }
 
   ngOnInit() {
-    this.heroes = [{ id: 1, name: 'Logan', power: 'self-healing' },
-              { id: 2, name: 'Rogue', power: 'flight, super human strength' },
-              { id: 3, name: 'Storm', power: 'elemental' },
-              { id: 4, name: 'Jean', power: 'telepathy' }
+    this.heroes = [
+      new Hero(1, 'Logan', 'Healing'),
+      new Hero(2, 'Rogue', 'Strength'),
+      new Hero(3, 'Jean', 'Telepathy'),
+      new Hero(4, 'Storm', 'Elemental')
             ];
   }
 
