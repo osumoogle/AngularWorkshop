@@ -15,6 +15,6 @@ import { HeroListComponent } from './hero-list/hero-list.component';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, HeroListComponent]
 })
 export class AppModule { }
