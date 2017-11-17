@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { HeroService } from './hero.service';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [HeroService],
   bootstrap: [AppComponent, HeroListComponent]
 })
 export class AppModule { }
