@@ -25,9 +25,6 @@ export class HeroListComponent implements OnInit {
   }
 
   isSelected(hero) {
-    if (!this.selectedHero) {
-      return false;
-    }
-    return hero.id === this.selectedHero.id;
+    return hero === this.selectedHero;
   }
 }
