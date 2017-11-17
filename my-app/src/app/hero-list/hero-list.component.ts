@@ -17,16 +17,11 @@ export class HeroListComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.heroes = this.heroService.getHeroes();
+    this.heroService.getHeroes().subscribe(heroes => (this.heroes = heroes));
   }
 
   setHero(hero) {
     this.selectedHero = hero;
-  }
-
-  add(hero: Hero) {
-    this.heroService.addHero(hero);
-    this.heroes = this.heroService.getHeroes();
   }
 
   isSelected(hero) {

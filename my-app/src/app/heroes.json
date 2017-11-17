@@ -1,0 +1,6 @@
+[
+ { "id": 1, "name": "Logan", "power": "Healing" },
+ { "id": 1, "name": "Rogue", "power": "Strength" },
+ { "id": 1, "name": "Jean", "power": "Telepathy" },
+ { "id": 1, "name": "Storm", "power": "Elemental" }
+]
